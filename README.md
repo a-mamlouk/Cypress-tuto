@@ -37,13 +37,19 @@ cd cypress-tuto
 
 - setup on your computer the latest latest node.js version ( reboot your computer 😊 ).
 - Make sur you terminal is on "cypress-tuto".
-- type : npm install cypress --save-dev
-- here , eat a cookie ' 🍪 ', while cypress is being downloaded.
-- when installation is done, run in your terminal:
+- type :
+
 ```bash
 npm install cypress --save-dev
 ```
-- In your terminal write : npx cypress open
+
+- here , eat a cookie ' 🍪 ', while cypress is being downloaded.
+- when installation is done, run in your terminal:
+
+```bash
+npx cypress open
+```
+
 - Have fun !
 
 ## Feedback and Support

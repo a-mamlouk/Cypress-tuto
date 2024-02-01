@@ -35,6 +35,17 @@ git clone https://github.com/a-mamlouk/Cypress-tuto.git
 cd cypress-tuto
 ```
 
+- setup on your computer the latest latest node.js version ( reboot your computer 😊 ).
+- Make sur you terminal is on "cypress-tuto".
+- type : npm install cypress --save-dev
+- here , eat a cookie ' 🍪 ', while cypress is being downloaded.
+- when installation is done, run in your terminal:
+```bash
+npm install cypress --save-dev
+```
+- In your terminal write : npx cypress open
+- Have fun !
+
 ## Feedback and Support
 
 Got feedback or need support? Open an issue, reach out to us via the "Discussions" tab or you can contact Anas via LinkedIn. We're here to help you get the most out of these tutorials.

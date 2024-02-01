@@ -54,6 +54,6 @@ npx cypress open
 
 ## Feedback and Support
 
-Got feedback or need support? Open an issue, reach out to us via the "Discussions" tab or you can contact Anas via LinkedIn. We're here to help you get the most out of these tutorials.
+Got feedback or need support? Open an issue, reach out to us via the "Discussions" tab, or you can contact Anas via LinkedIn. We're here to help you get the most out of these tutorials.
 
 ---

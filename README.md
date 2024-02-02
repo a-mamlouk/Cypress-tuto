@@ -36,7 +36,7 @@ cd cypress-tuto
 ```
 
 - setup on your computer the latest latest node.js version ( reboot your computer 😊 ).
-- Make sure you terminal is on "cypress-tuto".
+- Make sure your terminal is on "cypress-tuto".
 - type :
 
 ```bash

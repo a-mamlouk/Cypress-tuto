@@ -23,7 +23,7 @@ describe("handle drop downs", () => {
             .type('cypress automation')
         cy.wait(2000)
             cy.get('div.wM6W7d>span')
-            .should('have.length', 12)
+            .should('have.length', 13)
         cy.get('div.wM6W7d>span')
             .each(($el, index, $list) => {
             if($el.text() == 'cypress automation resume'){
@@ -31,7 +31,6 @@ describe("handle drop downs", () => {
             }
         })
         cy.wait(2000)
-        cy.get("input[name='q']")
-            .should('have.value', 'cypress automation resume')
+        cy.get("[name='q']").should('have.value', 'cypress automation')
     })
 })

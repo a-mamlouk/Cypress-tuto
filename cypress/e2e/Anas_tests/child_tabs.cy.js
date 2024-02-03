@@ -1,5 +1,5 @@
 describe("Window testing", () => {
-    it.("Test 1", () => {
+    it("Test 1", () => {
         //approche 1
         cy.visit('https://the-internet.herokuapp.com/windows')
         cy.get(".example > a")

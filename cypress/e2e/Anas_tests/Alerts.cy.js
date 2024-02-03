@@ -23,8 +23,9 @@ describe("Alerts", () => {
     })
     it("JS Confirm - Cancel", () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
-        cy.get("button[onclick='jsConfirm()']")
-            .click()
+        cy.get("button[onclick='jsConfirm()']").as('alert')
+        cy.wait(3000)
+        cy.get('@alert').click()
         cy.wait(3000)
         
         cy.on('window:confirm', () => false) 

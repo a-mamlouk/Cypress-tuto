@@ -17,8 +17,7 @@ describe('Capture screenshots and videos', () => {
     it.only('Capture screenshots', () => {
         cy.visit('https://demo.opencart.com/')
         cy.wait(1000)
-        cy.get('li:nth-child(7) a:nth-child(1)').should('have.text','Camerat')
-        .click()
+        cy.get('li:nth-child(7) a:nth-child(1)').should('have.text','Camerat').click()
         cy.wait(1000)
     })
 

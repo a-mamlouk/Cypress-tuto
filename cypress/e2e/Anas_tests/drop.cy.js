@@ -1,6 +1,6 @@
 describe("handle drop downs", () => {
 
-    it.skip("Drop down with select", () => {  
+    it("Drop down with select", () => {
         cy.visit("https://www.dummyticket.com/dummy-ticket-for-visa-application")
         cy.get('#select2-billing_country-container')
             .click()
@@ -8,7 +8,7 @@ describe("handle drop downs", () => {
             .type('United States')
             .type('{enter}')
     })
-    it.skip("Drop down with select", () => {
+    it("Drop down with select", () => {
         cy.visit("https://www.wikipedia.org")
         cy.get('#searchInput')
             .type('Delhi')

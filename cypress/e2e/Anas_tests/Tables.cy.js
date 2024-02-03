@@ -12,19 +12,19 @@ describe("Handle Tables", () => {
         cy.get("#menu-customer>ul>li:first-child").click()
         cy.wait(1000)
     })
-    it.skip("Check numbers of rows and columns", () => {
+    it("Check numbers of rows and columns", () => {
         cy.get(".table.table-bordered.table-hover>tbody>tr").assertLength(10)
         cy.get(".table.table-bordered.table-hover>thead>tr>td")(7)
     })
-    it.skip("Check the content of the table", () => {
+    it("Check the content of the table", () => {
         cy.get(".table.table-bordered.table-hover>tbody>tr:nth-child(2)>td:nth-child(3)").contains("olaola@das.com")
     })
-    it.skip("Check the content of the table", () => {
+    it("Check the content of the table", () => {
         cy.get(".table.table-bordered.table-hover>tbody>tr")
             .each(($row, index, $rows) => {
-                cy.wrap($row).within(() => {
-                    cy.get("td").each(($col, index, $cols) => {
-                        cy.log($col.text())
+        cy.wrap($row).within(() => {
+        cy.get("td").each(($col, index, $cols) => {
+        cy.log($col.text())
                     })
                 })       
             })     

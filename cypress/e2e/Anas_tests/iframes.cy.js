@@ -1,7 +1,7 @@
 import 'cypress-iframe'
 
 describe("iframes", () => {
-    it.skip("iframe", () => {
+    it("iframe", () => {
         cy.visit("https://the-internet.herokuapp.com/iframe")
         cy.wait(2000)
         const iframe = cy.get("#mce_0_ifr")

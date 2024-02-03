@@ -1,5 +1,5 @@
 describe("Window testing", () => {
-    it.skip("Test 1", () => {  
+    it.("Test 1", () => {
         //approche 1
         cy.visit('https://the-internet.herokuapp.com/windows')
         cy.get(".example > a")
@@ -25,5 +25,4 @@ describe("Window testing", () => {
         cy.go('back')   // parent window
         cy.url().should('include', 'windows')
     })
-
 })

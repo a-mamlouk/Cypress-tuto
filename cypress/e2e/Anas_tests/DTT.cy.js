@@ -1,6 +1,6 @@
 describe("my test suite", () => {
     //direct access
-    it.skip("my test case", () => {
+    it("my test case", () => {
         cy.visit('opensource-demo.orangehrmlive.com')
         cy.get("input[placeholder='Username']").type('Admin')
         cy.get("input[placeholder='Password']").type('admin123')
@@ -10,7 +10,7 @@ describe("my test suite", () => {
     })
 
     //access via hook
-    it.skip("my test x fixture", () => {
+    it("my test x fixture", () => {
         cy.visit('opensource-demo.orangehrmlive.com')
         cy.wait(5000)
         cy.fixture('orangehrm').then((data) => {

@@ -12,7 +12,7 @@ describe("Handling mouse actions", () => {
         cy.get(':nth-child(1) > .dropdown-menu > .dropdown-inner > .list-unstyled > :nth-child(2) > .nav-link').should('be.visible')
         cy.wait(2000)
     })
-    it.skip("mouse right click", () => {
+    it("mouse right click", () => {
         cy.visit('https://swisnl.github.io/jQuery-contextMenu/demo.html')
         cy.get('.context-menu-one.context-menu-one.btn.btn-neutral').should('be.visible')
         /* approch 1
@@ -27,7 +27,7 @@ describe("Handling mouse actions", () => {
         cy.get('.context-menu-icon-copy > span ').should('be.visible')    
         cy.wait(2000)
     })
-    it.skip('mouse double click', () => {
+    it('mouse double click', () => {
         cy.visit('https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick3')
         cy.frameLoaded('#iframeResult')
         // approch 1
@@ -41,7 +41,7 @@ describe("Handling mouse actions", () => {
         cy.wait(3000)
         cy.iframe('#iframeResult').find('#field2').should('have.value','Hello World!')
     })    
-    it.skip('drag and drop', () => {
+    it('drag and drop', () => {
         cy.visit('http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html')
         cy.wait(2000)
         cy.get('#box6').drag('#box106',{force:true})

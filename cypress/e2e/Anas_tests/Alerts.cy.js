@@ -1,5 +1,5 @@
 describe("Alerts", () => {
-    it.skip("JS Alerts", () => {
+    it("JS Alerts", () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.get("button[onclick='jsAlert()']")
             .click()
@@ -10,7 +10,7 @@ describe("Alerts", () => {
         cy.get("p#result").should('have.text', 'You successfully clicked an alert')      
         })    
     })
-    it.skip("JS Confirm", () => {
+    it("JS Confirm", () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.get("button[onclick='jsConfirm()']")
             .click()
@@ -21,7 +21,7 @@ describe("Alerts", () => {
         cy.get("#result").should('have.text', 'You clicked: Ok')      
         })    
     })
-    it.skip("JS Confirm - Cancel", () => {
+    it("JS Confirm - Cancel", () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.get("button[onclick='jsConfirm()']")
             .click()
@@ -31,7 +31,7 @@ describe("Alerts", () => {
             //cypress close using cancel
         cy.get("#result").should('have.text', 'You clicked: Cancel')      
         })  
-    it.skip("JS Prompt Alert", () => {
+    it("JS Prompt Alert", () => {
             cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
             cy.window().then((win) => {
                 cy.stub(win, 'prompt').returns('Cypress Automation')
@@ -41,7 +41,7 @@ describe("Alerts", () => {
             cy.wait(3000)
             cy.get("#result").should('have.text', 'You entered: Cypress Automation')       
     })
-    it.skip("JS Prompt Alert - Cancel", () => {
+    it("JS Prompt Alert - Cancel", () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.window().then((win) => {
             cy.stub(win, 'prompt').returns(null)

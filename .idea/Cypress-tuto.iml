@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/cypress/e2e/1-getting-started" />
       <excludeFolder url="file://$MODULE_DIR$/cypress/e2e/2-advanced-examples" />
+      <excludeFolder url="file://$MODULE_DIR$/cypress/screenshots" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
